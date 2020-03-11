@@ -1,0 +1,37 @@
+body {
+    background-color: beige;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    background: blanchedalmond;
+
+}
+
+h1{
+    font-weight: 900px;
+}
+
+.img{
+    
+    top: 0px;
+    right: 0px;
+    }
+
+p{
+    padding: 20px;
+background-color: violet;
+
+}
+
+h3{
+font-style: italic;
+}
+
+ul{
+    text-decoration: yellowgreen;
+
+}
+

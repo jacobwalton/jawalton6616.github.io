@@ -1,29 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Bio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Walton Portfolio</title>
+    <link rel="stylesheet" href="assets/reset.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <!-- <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script> -->
 </head>
+
 <body>
-    <header>
-    <h1>Student Bio</h1>
-    <h3>Jacob Walton</h3>
-    </header>
-    <img src="https://via.placeholder.com/200" alt="Placeholder" class="img"/>
-    <p>My name is Jacob and I am a 22 year old student from Kansas City. I have 2 crazy dogs, and my passion is music. I currently work in Overland Park, KS as a government contractor. My favorite color is purple and I don't know what else to type here. </p>
-    <ul>
-        <h3>Contact Info</h3>
-        <li>
-            <strong>Email: <a href="mailto:jawalton6616@gmail.com">jawalton6616@gmail.com</a></strong>
-        </li>
-        <li>
-            <strong>GitHub: <a href="https://github.com/jawalton6616/">jawalton6616</a> </strong>
-        </li>
-        <li>
-            <strong>Portfolio:Coming Soon</strong>
-        </li>
-    </ul>
+
+    <main class="start-page container">
+        <div class="main-page-name"> Jacob Walton</div>
+        <button type="button" class="btn btn-primary btn-lg btn-block view-page">View Portfolio</button>
+    </main>
+
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+            <a class="navbar-brand" href="#">Jacob Walton</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <h1>Bio</h1>
+        </header>
+        <div id="bio-div" class="container row">
+            <img src="assets/imgs/jacob-pic.jpg" alt="Jacob Walton" id="jacob-pic" />
+            <p id="bio-text" class="col">
+                My name is Jacob and I am a 22 year old student from Kansas City. I have
+                2 crazy dogs, and my passion is music. I currently work in Overland
+                Park, KS as a government contractor. My favorite color is purple and I
+                don't know what else to type here.
+            </p>
+        </div>
+        
+        <main class="portfolio-section container">
+            <div>
+                <header>
+                    <h1>Portfolio</h1>
+                </header>
+                
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-slide-to="0" class="active"></li>
+                      <li data-slide-to="1"></li>
+                      <li data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div id="port-item-1" class="carousel-item active">
+                        <img src="assets/imgs/simpsons-quote-sc.png" class="d-block w-100" alt="simpsons quote game">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                          <p><a target="_blank" href="https://github.com/jawalton6616/simpsons-quote-trivia"> View on Github</a></p>
+                        </div>
+                      </div>
+                      
+                        <div id="port-item-2" class="carousel-item">
+                          <img src="assets/imgs/weather-dash-sc.png" class="d-block w-100" alt="weather dashboard">
+                          <div class="carousel-caption d-none d-md-block">
+                            
+                            <p><a target="_blank" href="https://github.com/jawalton6616/weather-dashboard"> View on Github</a></p>
+                          </div>
+                        </div>
+                        
+                            <div id="port-item-3" class="carousel-item">
+                              <img src="assets/imgs/work-sched-sc.png" class="d-block w-100" alt="work scheduler app">
+                              <div class="carousel-caption d-none d-md-block">
+                                
+                                <p><a target="_blank" href="https://github.com/jawalton6616/work-scheduler"> View on Github</a></p>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+               
+            </div>
+        </main>
+
+        <div class="modal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Contact & Links</h5>
+                 
+                   
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>
+                            <strong>Email:
+                                <a href="mailto:jawalton6616@gmail.com">jawalton6616@gmail.com</a></strong>
+                        </li>
+                        <li>
+                            <strong>GitHub: <a href="https://github.com/jawalton6616/">jawalton6616</a>
+                            </strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary exit-modal" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+    </div>
+
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>

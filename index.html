@@ -33,7 +33,7 @@
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-text" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link contact">Contact</a>
@@ -42,11 +42,12 @@
             </div>
         </nav>
 
-        <header>
+        <!-- Bio -->
+        <div id="bio-div" class="container row">
+          <header>
             <h1>Bio</h1>
         </header>
-        <div id="bio-div" class="container row">
-            <img src="assets/imgs/jacob-pic.jpg" alt="Jacob Walton" id="jacob-pic" />
+            <img src="assets/imgs/jacob-pic.jpg" alt="Jacob Walton" class="img-thumbnail" id="jacob-pic"/>
             <p id="bio-text" class="col">
                 My name is Jacob and I am a 22 year old student from Kansas City. I have
                 2 crazy dogs, and my passion is music. I currently work in Overland
@@ -54,7 +55,7 @@
                 don't know what else to type here.
             </p>
         </div>
-        
+        <!-- Portfolio -->
         <main class="portfolio-section container">
             <div>
                 <header>
@@ -69,26 +70,26 @@
                     </ol>
                     <div class="carousel-inner">
                       <div id="port-item-1" class="carousel-item active">
-                        <img src="assets/imgs/simpsons-quote-sc.png" class="d-block w-100" alt="simpsons quote game">
+                        <img src="assets/imgs/simpsons-quote-sc.png" class="port-img d-block w-100" alt="simpsons quote game">
                         <div class="carousel-caption d-none d-md-block">
                           
-                          <p><a target="_blank" href="https://github.com/jawalton6616/simpsons-quote-trivia"> View on Github</a></p>
+                          <p><a class="port-url" target="_blank" href="https://github.com/jawalton6616/simpsons-quote-trivia"> View on Github</a></p>
                         </div>
                       </div>
                       
                         <div id="port-item-2" class="carousel-item">
-                          <img src="assets/imgs/weather-dash-sc.png" class="d-block w-100" alt="weather dashboard">
+                          <img src="assets/imgs/weather-dash-sc.png" class="port-img d-block w-100" alt="weather dashboard">
                           <div class="carousel-caption d-none d-md-block">
                             
-                            <p><a target="_blank" href="https://github.com/jawalton6616/weather-dashboard"> View on Github</a></p>
+                            <p><a class="port-url" target="_blank" href="https://github.com/jawalton6616/weather-dashboard"> View on Github</a></p>
                           </div>
                         </div>
                         
                             <div id="port-item-3" class="carousel-item">
-                              <img src="assets/imgs/work-sched-sc.png" class="d-block w-100" alt="work scheduler app">
+                              <img src="assets/imgs/work-sched-sc.png" class="port-img d-block w-100" alt="work scheduler app">
                               <div class="carousel-caption d-none d-md-block">
                                 
-                                <p><a target="_blank" href="https://github.com/jawalton6616/work-scheduler"> View on Github</a></p>
+                                <p><a class="port-url" target="_blank" href="https://github.com/jawalton6616/work-scheduler"> View on Github</a></p>
                               </div>
                             </div>
                     </div>
@@ -96,8 +97,8 @@
                
             </div>
         </main>
-
-        <div class="modal">
+        <!-- Contact Modal -->
+        <section class="modal">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -123,8 +124,20 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
+          <!-- Footer-->
+          <footer class="page-footer">            
+            <div class="container-fluid text-center text-md-left">
+              <div class="footer-copyright text-center py-3">Made by Jacob Walton using:          
+                
+                <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+                &
+                <a href="https://bootstrap.com/"> Bootstrap.com</a>
+
+              </div>
+            </div>          
+          </footer>
 
 
     </div>

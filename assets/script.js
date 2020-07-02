@@ -2,7 +2,7 @@ var viewBtn = $(".view-page");
 var mainContent = $(".main-content");
 var startPg = $(".start-page");
 
-viewBtn.click(function () {
+viewBtn.click(() => {
   mainContent.addClass("animated fadeInUp");
   mainContent.attr("style", "display: block");
   startPg.attr("style", "display: none");
@@ -18,7 +18,7 @@ var slideThreeBtn = $("li[data-slide-to='2']");
 var portImgThree = $("#port-item-3");
 
 //display slide on click
-slideOneBtn.click(function () {
+slideOneBtn.click(() => {
   console.log("button one works");
   slideOneBtn.addClass("active");
   slideTwoBtn.removeClass("active");
@@ -28,7 +28,7 @@ slideOneBtn.click(function () {
   portImgThree.removeClass("active");
 });
 
-slideTwoBtn.click(function () {
+slideTwoBtn.click(() => {
   slideTwoBtn.addClass("active");
   slideOneBtn.removeClass("active");
   slideThreeBtn.removeClass("active");
@@ -37,7 +37,7 @@ slideTwoBtn.click(function () {
   portImgThree.removeClass("active");
 });
 
-slideThreeBtn.click(function () {
+slideThreeBtn.click(() => {
   slideThreeBtn.addClass("active");
   slideTwoBtn.removeClass("active");
   slideOneBtn.removeClass("active");
@@ -47,12 +47,10 @@ slideThreeBtn.click(function () {
 });
 
 //display contact modal on click
-$(".contact").click(function () {
+$(".contact").click(() => {
   $(".modal").attr("style", "display:block;");
-
-
 });
 
-$(".exit-modal").click(function () {
+$(".exit-modal").click(() => {
   $(".modal").attr("style", "display:none;");
 });

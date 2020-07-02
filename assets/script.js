@@ -17,6 +17,9 @@ var portImgTwo = $("#port-item-2");
 var slideThreeBtn = $("li[data-slide-to='2']");
 var portImgThree = $("#port-item-3");
 
+var slideFourBtn = $("li[data-slide-to='3']");
+var portImgFour = $("#port-item-4");
+
 //display slide on click
 slideOneBtn.click(() => {
   console.log("button one works");
@@ -26,6 +29,8 @@ slideOneBtn.click(() => {
   portImgOne.addClass("active");
   portImgTwo.removeClass("active");
   portImgThree.removeClass("active");
+  slideFourBtn.removeClass("active");
+  portImgFour.removeClass("active");
 });
 
 slideTwoBtn.click(() => {
@@ -35,13 +40,28 @@ slideTwoBtn.click(() => {
   portImgTwo.addClass("active");
   portImgOne.removeClass("active");
   portImgThree.removeClass("active");
+  slideFourBtn.removeClass("active");
+  portImgFour.removeClass("active");
 });
 
 slideThreeBtn.click(() => {
   slideThreeBtn.addClass("active");
   slideTwoBtn.removeClass("active");
   slideOneBtn.removeClass("active");
+  slideFourBtn.removeClass("active");
   portImgThree.addClass("active");
+  portImgTwo.removeClass("active");
+  portImgOne.removeClass("active");
+  portImgFour.removeClass("active");
+});
+
+slideFourBtn.click(() => {
+  slideFourBtn.addClass("active");
+  slideThreeBtn.removeClass("active");
+  slideTwoBtn.removeClass("active");
+  slideOneBtn.removeClass("active");
+  portImgFour.addClass("active");
+  portImgThree.removeClass("active");
   portImgTwo.removeClass("active");
   portImgOne.removeClass("active");
 });

@@ -4,10 +4,9 @@ body {
   background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
-footer{
+footer {
   width: 100%;
   margin: 0px;
-
 }
 
 .main-page-name {
@@ -73,6 +72,7 @@ header {
   border-radius: 30px;
   padding: 5%;
   margin-bottom: 1%;
+  box-shadow: 2px 2px 2px 2px lightgrey;
 }
 
 .carousel-indicators {
@@ -95,11 +95,12 @@ header {
   width: 10%;
   margin: 2%;
   margin-top: 0px;
+  box-shadow: 2px 2px 2px 2px black;
 }
 
-#bio-div{
-margin: 0 auto;
-width: 70%;
+#bio-div {
+  margin: 0 auto;
+  width: 70%;
 }
 
 #bio-text {
